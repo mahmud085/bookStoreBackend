@@ -1,3 +1,7 @@
+/**
+ * @author Mahmud
+ */
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -42,4 +46,4 @@ app.post('/api',function(req,res){
 app.listen(process.env.PORT || 3001, function() {
     console.log('Server listening');
 });
-mongoose.connect("mongodb://localhost/react");
+mongoose.connect("mongodb://localhost/bookStore");
